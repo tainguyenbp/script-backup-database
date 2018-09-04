@@ -36,7 +36,7 @@ remove_backup_database() {
 packet_file_sqldump() {
 
 	cd "$CURRENT_DIR"/backup_mysql/"$ymd"
-	tar -czvf "$db_name"-"$name"-"$ymd".tar.gz -"$name"-"$ymd".sql		
+	tar -czvf "$db_name"-"$name"-"$ymd".tar.gz "$db_name"-"$name"-"$ymd".sql		
 
 }
 
